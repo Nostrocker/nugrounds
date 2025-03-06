@@ -1,0 +1,20 @@
+.shiny {
+    font-family: "Comic Sans MS", "Comic Sans"; /* Pick any font you like */
+    font-size: 48px; /* Adjust size as needed */
+    display: inline-block;
+    background: linear-gradient(90deg, #fff, #00ffcc, #fff); /* Gradient for the shine */
+    background-size: 200% 100%; /* Makes it wide enough to animate */
+    -webkit-background-clip: text; /* Clips the gradient to the text */
+    background-clip: text; /* Standard property */
+    color: transparent; /* Hides the text color, shows gradient */
+    animation: shine 2s infinite; /* Runs the shine animation */
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0; /* Starts off-screen to the right */
+    }
+    100% {
+        background-position: -200% 0; /* Moves fully to the left */
+    }
+}
